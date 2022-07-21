@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int tst;
+	int n,m;
+	cin>>tst;
+	for (int i=0;i<tst;i++) {
+	    /* code */
+	    cin>>n>>m;
+	    if(n%2==0&&m%2==0){
+	        cout<<0<<endl;
+	    }
+	    else if(m%2==0){
+	        cout<<m<<endl;
+	    }
+	    else if(n%2==0){
+	        cout<<n<<endl;
+	    }
+	    else{
+	        cout<<m+n-1<<endl;
+	    }
+	}
+	return 0;
+}
