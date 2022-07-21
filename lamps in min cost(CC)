@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int tst;
+	cin>>tst;
+	int n,k,x,y;
+	int min,cost;
+	for(int i=0;i<tst;i++){
+	    cin>>n>>k>>x>>y;
+	    if(x<y)
+	    min=x;
+	    else
+	    min=y;
+	    cost=(k*x)+(min*(n-k));
+	    cout<<cost<<endl;
+	}
+	return 0;
+}
