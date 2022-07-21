@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int tst;
+    cin>>tst;
+    int ans,rem;
+    int n,k,m;
+    for(int i=0;i<tst;i++){
+        cin>>n>>k>>m;
+        int div=(k*m);
+        rem=n%div;
+        ans=n/div;
+        if(rem!=0)
+        ans++;
+       cout<<ans<<endl;
+    }
+
+
+	return 0;
+}
